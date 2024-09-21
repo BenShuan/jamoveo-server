@@ -4,11 +4,8 @@ const { Server } = require("socket.io");
 const app = express();
 var cors = require("cors");
 
-var env = process.env.NODE_ENV || 'development';
-if (env ==='development' ) {
-  
+
   require("dotenv").config();
-}
 
 
 app.use(cors());
