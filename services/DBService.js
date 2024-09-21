@@ -5,7 +5,7 @@ const veech_shelo = require("./veech_shelo.json");
 const  dbConnect =async () => {
   try {
     // Create a Mongoose client with a MongoClientOptions object to set the Stable API version
-    await mongoose.connect(process.env.DATABASE_URL, {
+    await mongoose.connect("mongodb+srv://benshuan:Ben8067783@chatapp.c8sq1fw.mongodb.net/?retryWrites=true&w=majority&appName=ChatApp", {
       dbName: "Jamoveo",
       serverApi: { version: "1", strict: true, deprecationErrors: true },
     });
