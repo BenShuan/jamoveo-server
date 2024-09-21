@@ -1,3 +1,3 @@
-const app = require("../index");
+const httpServer = require("../index");
 
-export default app;
+export default httpServer;

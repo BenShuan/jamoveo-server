@@ -62,4 +62,4 @@ app.use("/songs", songsRoute);
 
 httpServer.listen(3000);
 
-module.exports = app;
+module.exports = httpServer;
