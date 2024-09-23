@@ -55,6 +55,7 @@ class User {
       username: this.username,
       password: this.password,
       instrument: this.instrument,
+      role: this.role,
     });
 
     console.log("user", user);
