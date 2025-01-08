@@ -2,8 +2,7 @@ const { default: mongoose } = require("mongoose");
 const hey_jude = require("./hey_jude.json");
 const veech_shelo = require("./veech_shelo.json");
 
-const dotenv = require('dotenv');
-dotenv.config()
+
 const uri =process.env.DATABASE_URL
 
 const  dbConnect =async () => {
