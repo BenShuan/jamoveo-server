@@ -2,10 +2,14 @@ const { default: mongoose } = require("mongoose");
 const hey_jude = require("./hey_jude.json");
 const veech_shelo = require("./veech_shelo.json");
 
+const dotenv = require('dotenv');
+dotenv.config()
+const uri =process.env.DATABASE_URL
+
 const  dbConnect =async () => {
   try {
     // Create a Mongoose client with a MongoClientOptions object to set the Stable API version
-    await mongoose.connect("mongodb+srv://benshuan:Ben8067783@chatapp.c8sq1fw.mongodb.net/?retryWrites=true&w=majority&appName=ChatApp", {
+    await mongoose.connect(uri, {
       dbName: "Jamoveo",
       serverApi: { version: "1", strict: true, deprecationErrors: true },
     });
